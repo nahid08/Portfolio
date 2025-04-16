@@ -1,0 +1,60 @@
+/* Basic Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.app-container {
+  display: flex;
+  min-height: 100vh;
+  position: relative; /* Needed for absolute positioning of sidebar on mobile */
+  overflow-x: hidden; /* Prevents horizontal scrollbar when sidebar is hidden */
+}
+
+/* --- Mobile First Styles (Default) --- */
+
+.sidebar-toggle {
+  position: fixed; /* Or absolute relative to app-container if header exists */
+  top: 15px;
+  left: 15px;
+  z-index: 1100; /* Above sidebar and overlay */
+  background: #eee;
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  border-radius: 4px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  z-index: 998; /* Below sidebar, above content */
+  display: block; /* Show overlay when sidebar is open on mobile */
+}
+
+
+/* --- Tablet/Desktop Styles (Media Query) --- */
+@media (min-width: 769px) {
+  .app-container {
+    /* Ensure sidebar doesn't overlap content */
+    /* The actual sidebar component will handle its own positioning */
+  }
+
+  .sidebar-toggle {
+    display: none; /* Hide hamburger button on large screens */
+  }
+
+  .overlay {
+      display: none; /* Hide overlay on large screens */
+  }
+}
