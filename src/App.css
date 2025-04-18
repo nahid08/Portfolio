@@ -1,60 +1,47 @@
-/* Basic Reset */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+/* src/App.css */
 
-body {
-  font-family: sans-serif;
-}
-
-.app-container {
-  display: flex;
-  min-height: 100vh;
-  position: relative; /* Needed for absolute positioning of sidebar on mobile */
-  overflow-x: hidden; /* Prevents horizontal scrollbar when sidebar is hidden */
-}
-
-/* --- Mobile First Styles (Default) --- */
-
-.sidebar-toggle {
-  position: fixed; /* Or absolute relative to app-container if header exists */
-  top: 15px;
-  left: 15px;
-  z-index: 1100; /* Above sidebar and overlay */
-  background: #eee;
-  border: 1px solid #ccc;
-  padding: 8px 12px;
-  cursor: pointer;
-  font-size: 1.5rem;
-  border-radius: 4px;
-}
-
-.overlay {
-  position: fixed;
+/* Make the static sidebar take full height */
+.sidebar-sticky {
+  position: sticky; /* Can be sticky or fixed if needed */
   top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
-  z-index: 998; /* Below sidebar, above content */
-  display: block; /* Show overlay when sidebar is open on mobile */
+  height: 100vh; /* Full viewport height */
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable if content overflows */
+  border-right: 1px solid #dee2e6; /* Optional border */
 }
 
+/* Style the wrapper inside the static sidebar if needed */
+.sidebar-content {
+  padding-top: 1rem; /* Example padding */
+}
 
-/* --- Tablet/Desktop Styles (Media Query) --- */
-@media (min-width: 769px) {
-  .app-container {
-    /* Ensure sidebar doesn't overlap content */
-    /* The actual sidebar component will handle its own positioning */
-  }
+/* Ensure main content doesn't get hidden */
+.main-content {
+  padding: 1.5rem; /* Add some padding */
+  min-height: 100vh; /* Ensure it takes at least full height */
+}
 
-  .sidebar-toggle {
-    display: none; /* Hide hamburger button on large screens */
-  }
+/* Style Nav Links (Optional) */
+.sidebar-sticky .nav-link,
+.offcanvas .nav-link {
+  color: #333; /* Darker text color */
+  font-weight: 500;
+}
 
-  .overlay {
-      display: none; /* Hide overlay on large screens */
-  }
+.sidebar-sticky .nav-link:hover,
+.offcanvas .nav-link:hover,
+.sidebar-sticky .nav-link.active, /* Style for active link */
+.offcanvas .nav-link.active {
+  color: #0d6efd; /* Bootstrap primary blue */
+  background-color: rgba(13, 110, 253, 0.1); /* Slight background on hover/active */
+  border-radius: 0.25rem;
+}
+
+/* Adjust Offcanvas body padding if needed (we set it to 0 in JS) */
+.offcanvas-body {
+ /* padding: 1rem; */ /* Example if you didn't remove padding in JS */
+}
+
+html {
+  scroll-behavior: smooth;
 }

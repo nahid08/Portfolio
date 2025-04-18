@@ -8,20 +8,20 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 function MainContent() {
   return (
-    <main className="main-content">
-    <section id="about" className="section">
-           <AboutMyself/>
-        </section>
-        <section id="experience" className="section">
-          <Experience/>
-        </section>
-        <section id="education" className="section">
-          <Education/>
-        </section>
-        <section id="skills" className="section">
-          <Skills/>
-        </section>
-  </main>
+     <Container fluid>
+      <Row>
+        <Col>
+        <section id="about"><AboutMyself/></section>
+        </Col>
+      </Row>
+
+      <Row>
+        <Col>
+       <section id="experience"><Experience/></section>
+        </Col>
+      </Row>
+
+     </Container>
   );
 }
 

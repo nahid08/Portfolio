@@ -6,7 +6,7 @@ import './AboutMyself.css';
 export default function AboutMyself() {
 
     return (
-        <Container fluid>
+        <Container className="vh-100 d-flex flex-column justify-content-center">
               <Row className="mb-5">
                 <Col xs={12}>
                   <h1>Nahid Hossain</h1>

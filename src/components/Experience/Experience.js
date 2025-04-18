@@ -4,7 +4,7 @@ import './Experience.css';
 export default function Experience() {
 
     return(
-        <Container>
+        <Container  className="vh-100 d-flex flex-column justify-content-center">
             <Row>
                 <Col>
                 <h1 className="mb-5 custom-underline">Experience</h1>

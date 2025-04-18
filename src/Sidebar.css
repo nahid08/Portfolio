@@ -1,98 +1,51 @@
-/* --- Mobile First Styles (Default) --- */
+/* Define sidebar width */
+:root {
+  --sidebar-width-lg: 250px;
+  --sidebar-width-sm: 280px; /* Can be wider on mobile when overlaying */
+}
+
 .sidebar {
-  position: fixed; /* Fixed position for mobile overlay */
+  position: fixed; /* Fixed Sidebar */
   top: 0;
   left: 0;
-  height: 100%;
-  width: 300px; /* Adjust width as needed */
-  background-color: #333;
-  color: white;
-  padding: 20px;
-  transform: translateX(-100%); /* Hide off-screen by default */
-  transition: transform 0.3s ease-in-out;
-  z-index: 1000; /* Ensure it's above the main content */
-  display: flex;
-  flex-direction: column;
+  height: 100vh; /* Full Height */
+  width: var(--sidebar-width-lg);
+  z-index: 1030; /* Needs to be higher than content, but lower than modals potentially */
+  transition: margin-left 0.3s ease-in-out; /* Transition for main content */
+  display: flex; /* Use flexbox for vertical alignment */
+  flex-direction: column; /* Stack items vertically */
+  padding-bottom: 1rem; /* Add some padding at the bottom */
 }
 
-.sidebar.open {
-  transform: translateX(0); /* Slide in when open */
+.sidebar .sidebar-sticky {
+  flex-grow: 1; /* Allow this section to grow and push footer down */
+  overflow-y: auto; /* Add scroll if content overflows */
 }
 
-.sidebar-header h3 {
-  margin: 0;
-}
 
-/* Style for the close button inside the sidebar (mobile view) */
-.sidebar-close-button {
+/* Small screens (Bootstrap's default is < 992px for lg) */
+@media (max-width: 750px) {
+  .sidebar {
+    width: var(--sidebar-width-sm);
+    margin-left: calc(-1 * var(--sidebar-width-sm)); /* Hide off-screen */
+    transition: margin-left 0.3s ease-in-out;
+  }
+
+  .sidebar.open {
+    margin-left: 0; /* Slide in */
+  }
+
+  /* Optional: Style for the close button inside sidebar */
+  .sidebar .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.5rem;
     background: none;
     border: none;
-    color: #aaa;
-    font-size: 1.8rem;
+    color: white; /* Or adapt to your sidebar text color */
     cursor: pointer;
-    line-height: 1; /* Adjust line height for better alignment */
-}
-.sidebar-close-button:hover {
-    color: white;
-}
-
-
-.sidebar nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-
-.sidebar nav li {
-  margin-bottom: 15px;
-}
-
-.sidebar nav a {
-  color: #ccc;
-  text-decoration: none;
-  font-size: 1.3rem;
-  display: block; /* Make the whole area clickable */
-  padding: 5px 0;
-}
-
-.sidebar nav a:hover {
-  color: white;
-}
-
-.image-style {
-  display: none;
-  width: 250px;
-  height: 350px;
-}
-
-/* --- Tablet/Desktop Styles (Media Query) --- */
-@media (min-width: 769px) {
-  .sidebar {
-    position: fixed; /* Change from fixed to static/relative */
-    height: auto; /* Let content determine height */
-    min-height: 100vh; /* Ensure it spans full height */
-    transform: translateX(0); /* Always visible, remove transform */
-    transition: none; /* No transition needed for static position */
-    /* Keep width, background, color etc. */
-    flex-shrink: 0; /* Prevent sidebar from shrinking if content is wide */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-  }
-
-  /* Hide the internal close button on large screens */
-  .sidebar-close-button {
-    display: none;
-  }
-
-  /* Adjust sidebar header if needed for desktop view */
-  .sidebar-header h3 {
-      /* Example: maybe you want different spacing */
-  }
-
-  .image-style {
-    display: block;
+    padding: 0;
+    line-height: 1;
   }
 }
