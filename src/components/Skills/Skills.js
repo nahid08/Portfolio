@@ -6,7 +6,7 @@ import './Skills.css';
 export default function Skills() {
 
     return (
-        <Container>
+        <Container className="vh-100 d-flex flex-column justify-content-center">
             <Row>
                 <Col>
                  <h1 className="custom-underline"> SKILLS</h1>

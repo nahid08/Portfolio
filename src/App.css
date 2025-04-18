@@ -8,6 +8,7 @@
   overflow-x: hidden;
   overflow-y: auto; /* Scrollable if content overflows */
   border-right: 1px solid #dee2e6; /* Optional border */
+  background-color: lightgreen;
 }
 
 /* Style the wrapper inside the static sidebar if needed */
@@ -17,8 +18,10 @@
 
 /* Ensure main content doesn't get hidden */
 .main-content {
-  padding: 1.5rem; /* Add some padding */
+   /* Add some padding */
   min-height: 100vh; /* Ensure it takes at least full height */
+  background-color: lightgoldenrodyellow;
+  transition: background-color 0.5s ease-in-out; /* The key part */
 }
 
 /* Style Nav Links (Optional) */
@@ -32,7 +35,7 @@
 .offcanvas .nav-link:hover,
 .sidebar-sticky .nav-link.active, /* Style for active link */
 .offcanvas .nav-link.active {
-  color: #0d6efd; /* Bootstrap primary blue */
+  color: maroon; /* Bootstrap primary blue */
   background-color: rgba(13, 110, 253, 0.1); /* Slight background on hover/active */
   border-radius: 0.25rem;
 }
@@ -42,6 +45,6 @@
  /* padding: 1rem; */ /* Example if you didn't remove padding in JS */
 }
 
-html {
+body {
   scroll-behavior: smooth;
 }

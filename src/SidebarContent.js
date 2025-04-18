@@ -13,13 +13,13 @@ function SidebarContent() {
         <BarChartFill className="me-2" />
         Experience
       </Nav.Link>
-      <Nav.Link href="#users" className="d-flex align-items-center mb-2">
+      <Nav.Link href="#education" className="d-flex align-items-center mb-2">
         <PeopleFill className="me-2" />
-        Users
+        Education
       </Nav.Link>
-      <Nav.Link href="#settings" className="d-flex align-items-center">
+      <Nav.Link href="#skills" className="d-flex align-items-center">
         <GearFill className="me-2" />
-        Settings
+        Skills
       </Nav.Link>
       {/* Add more links as needed */}
     </Nav>

@@ -20,7 +20,7 @@ function App() {
   return (
     <>
       {/* Button to toggle Offcanvas on small screens (visible only below md) */}
-      <Container fluid className="p-3 d-md-none"> {/* Only show on xs, sm */}
+      <Container fluid className="p-3 d-md-none position-fixed mb-5"> {/* Only show on xs, sm */}
         <Button variant="primary" onClick={handleOffcanvasShow}>
           <List size={24} /> {/* Hamburger Icon */}
            <span className="ms-2">Menu</span>
@@ -28,7 +28,7 @@ function App() {
       </Container>
 
       {/* Main Layout using Container, Row, Col */}
-      <Container fluid>
+      <Container fluid >
         <Row>
           {/* --- Sidebar Column (visible on medium screens and up) --- */}
           {/*
@@ -36,7 +36,7 @@ function App() {
              - `col-md-3 col-lg-2`: Defines column width for medium (3/12) and large (2/12) screens
              - `sidebar-sticky`: Custom class for potential sticky positioning and styling
           */}
-          <Col md={3} lg={2} className="d-none d-md-block bg-light sidebar-sticky">
+          <Col md={3} lg={2} className="d-none d-md-block sidebar-sticky">
              {/* --- Static Sidebar for Larger Screens --- */}
              <div className="sidebar-content"> {/* Wrapper div */}
                 <h5 className="p-3 mb-0 border-bottom">My App</h5> {/* Optional header */}
@@ -70,6 +70,8 @@ function App() {
           responsive="md" // Only act as Offcanvas below md breakpoint
           placement="start" // Slide from left
           className="bg-light" // Match background with static sidebar
+          backdrop="static"
+          scroll={true}
        >
         <Offcanvas.Header closeButton>
           <Offcanvas.Title>Menu</Offcanvas.Title>

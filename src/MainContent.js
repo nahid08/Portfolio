@@ -8,7 +8,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 function MainContent() {
   return (
-     <Container fluid>
+     <Container fluid className="main-container">
       <Row>
         <Col>
         <section id="about"><AboutMyself/></section>
@@ -21,6 +21,17 @@ function MainContent() {
         </Col>
       </Row>
 
+      <Row>
+        <Col>
+       <section id="education"><Education/></section>
+        </Col>
+      </Row>
+
+      <Row>
+        <Col>
+       <section id="skills"><Skills/></section>
+        </Col>
+      </Row>
      </Container>
   );
 }
