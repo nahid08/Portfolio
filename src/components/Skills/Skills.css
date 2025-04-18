@@ -7,12 +7,3 @@
     color: maroon;
 }
 
-.horizontal-list {
-    display: flex;
-    gap: 50px;
-  }
-
-  .horizontal-list li {
-    list-style: disc; /* show dot */
-    display: list-item;
-  }

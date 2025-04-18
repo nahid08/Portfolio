@@ -3,12 +3,14 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
+import Image from 'react-bootstrap/Image';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { List } from 'react-bootstrap-icons'; // Hamburger icon
 import SidebarContent from './SidebarContent'; // Import the reusable content
 import './App.css'; // For custom styles
 import 'bootstrap/dist/css/bootstrap.min.css';
 import MainContent from './MainContent';
+import myself from './assets/images/myself.jpg'
 
 function App() {
   // State to control the Offcanvas visibility on small screens
@@ -36,10 +38,11 @@ function App() {
              - `col-md-3 col-lg-2`: Defines column width for medium (3/12) and large (2/12) screens
              - `sidebar-sticky`: Custom class for potential sticky positioning and styling
           */}
-          <Col md={3} lg={2} className="d-none d-md-block sidebar-sticky">
+          <Col md={3} lg={2} className="d-none d-md-block sidebar-sticky animated-gradient-background">
              {/* --- Static Sidebar for Larger Screens --- */}
              <div className="sidebar-content"> {/* Wrapper div */}
-                <h5 className="p-3 mb-0 border-bottom">My App</h5> {/* Optional header */}
+                {/* <h5 className="p-3 mb-0 border-bottom">My App</h5> */}
+                <Image src={myself}  fluid roundedCircle className="p-3 mb-0 border-bottom image-style w-100"/>
                 <SidebarContent />
              </div>
           </Col>
@@ -76,7 +79,7 @@ function App() {
         <Offcanvas.Header closeButton>
           <Offcanvas.Title>Menu</Offcanvas.Title>
         </Offcanvas.Header>
-        <Offcanvas.Body className="p-0 d-md-none"> {/* Remove padding to use SidebarContent's padding */}
+        <Offcanvas.Body className="p-0 d-md-none animated-gradient-background"> {/* Remove padding to use SidebarContent's padding */}
           {/* --- Re-use the same sidebar content --- */}
           <SidebarContent />
         </Offcanvas.Body>

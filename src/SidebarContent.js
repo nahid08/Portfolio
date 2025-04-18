@@ -5,20 +5,16 @@ import { HouseDoorFill, BarChartFill, PeopleFill, GearFill } from 'react-bootstr
 function SidebarContent() {
   return (
     <Nav className="flex-column p-3"> {/* Use flex-column for vertical nav */}
-      <Nav.Link href="#about" className="d-flex align-items-center mb-2">
-        <HouseDoorFill className="me-2" /> {/* Icon */}
-        About
+      <Nav.Link href="#about" className="d-flex align-items-center justify-content-md-center mb-2">
+       About
       </Nav.Link>
-      <Nav.Link href="#experience" className="d-flex align-items-center mb-2">
-        <BarChartFill className="me-2" />
+      <Nav.Link href="#experience" className="d-flex align-items-center justify-content-md-center mb-2">
         Experience
       </Nav.Link>
-      <Nav.Link href="#education" className="d-flex align-items-center mb-2">
-        <PeopleFill className="me-2" />
+      <Nav.Link href="#education" className="d-flex align-items-center justify-content-md-center mb-2">
         Education
       </Nav.Link>
-      <Nav.Link href="#skills" className="d-flex align-items-center">
-        <GearFill className="me-2" />
+      <Nav.Link href="#skills" className="d-flex align-items-center justify-content-md-center">
         Skills
       </Nav.Link>
       {/* Add more links as needed */}
