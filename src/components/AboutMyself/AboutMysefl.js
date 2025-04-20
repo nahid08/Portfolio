@@ -11,7 +11,7 @@ export default function AboutMyself() {
               <Row className="mb-5">
                 <Col xs={12}>
                   <h1>Nahid Hossain</h1>
-                  <p1>Dhaka, Bangladesh <span className="d-inline-block">·</span> <a href="drmc.nahid@gmail.com" className="mail-design">drmc.nahid@gmail.com</a></p1>
+                  <p>Dhaka, Bangladesh <span className="d-inline-block">·</span> <a href="drmc.nahid@gmail.com" className="mail-design">drmc.nahid@gmail.com</a></p>
                 </Col>
               </Row>
               <Row>                

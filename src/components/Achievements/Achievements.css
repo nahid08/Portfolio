@@ -1,3 +1,7 @@
 .achievements-list-style {
     list-style-type: none;
 }
+
+.achievements-list-style a {
+    color: maroon;
+}
