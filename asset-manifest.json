@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.ff0ea2d2.css",
+    "main.js": "/Portfolio/static/js/main.d523a27b.js",
+    "static/js/453.1407b060.chunk.js": "/Portfolio/static/js/453.1407b060.chunk.js",
+    "static/media/jahangirnagar_logo1.png": "/Portfolio/static/media/jahangirnagar_logo1.03324a7de1eeddaa6261.png",
+    "static/media/drmc.png": "/Portfolio/static/media/drmc.4632f568dc2ae8e2b176.png",
+    "static/media/myself.jpg": "/Portfolio/static/media/myself.eb0e6bd1dc46ee1dac10.jpg",
+    "index.html": "/Portfolio/index.html",
+    "main.ff0ea2d2.css.map": "/Portfolio/static/css/main.ff0ea2d2.css.map",
+    "main.d523a27b.js.map": "/Portfolio/static/js/main.d523a27b.js.map",
+    "453.1407b060.chunk.js.map": "/Portfolio/static/js/453.1407b060.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ff0ea2d2.css",
+    "static/js/main.d523a27b.js"
+  ]
+}
