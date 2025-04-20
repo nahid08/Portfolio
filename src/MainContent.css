@@ -1,11 +1,27 @@
 
 .main-container {
   font-family: 'Poppins';
-  font-size: clamp(1rem, 1vw, 3rem) !important;
+  font-size: clamp(1.2rem, 1.5vw, 3rem) !important;
 }
 
 .custom-underline {
   display: inline-block;
   border-bottom: 3px solid maroon;  /* Adjust thickness and color */
   padding-bottom: 10px;  /* Adjust the space between text and the underline */
+}
+
+.topbar-style {
+  background-color: maroon;
+  float: left;
+}
+
+.topbar-style button {
+  background-color: maroon;
+  border: 2px solid white;
+  float: left;
+}
+
+.topbar-style button:hover {
+  background-color: transparent;
+  border: 2px solid white;
 }

@@ -7,7 +7,7 @@ export default function Education() {
     <Container className="min-vh-100 mobile-padding d-flex flex-column justify-content-md-center">
       <Row>
         <Col>
-          <h1 className="custom-underline">Education</h1>
+          <h3 className="custom-underline">Education</h3>
         </Col>
       </Row>
 

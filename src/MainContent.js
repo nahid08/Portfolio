@@ -7,15 +7,16 @@ import Skills from './components/Skills/Skills';
 import { Container, Row, Col, Navbar, Button, Nav } from 'react-bootstrap';
 import ExtraCurricular from './components/ExtraCurricular/ExtraCurricular';
 import Achievements from './components/Achievements/Achievements';
-import { List } from "react-bootstrap-icons"; // Hamburger icon
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function MainContent({onGreet}) {
   return (
      <Container  className="main-container">
-      <Navbar className="d-md-none bg-light" fixed="top">
-                        <Container className="d-flex justify-content-start">
-                          <Button variant="primary" onClick={onGreet}>
-                            <List size={24} />
+      <Navbar className="d-md-none topbar-style" fixed="top">
+                        <Container >
+                          <Button onClick={onGreet}>
+                            <FontAwesomeIcon icon={faBars}/>
                           </Button>
                         </Container>
       </Navbar>
@@ -45,7 +46,7 @@ function MainContent({onGreet}) {
 
       <Row>
         <Col>
-       <section id="extracurricular"><ExtraCurricular/></section>
+       <section id="programming"><ExtraCurricular/></section>
         </Col>
       </Row>
 

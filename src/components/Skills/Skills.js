@@ -4,7 +4,7 @@ import { faPython, faJava, faJs, faAngular, faSourcetree, faHtml5 } from "@forta
 import './Skills.css';
 
 let programmingLanguage = ["Java", "Javascript", "TypeScript", "C++", "HTML", "CSS", "Python"]
-let frameWork = ["AngularJS", "Angular", "Spring"]
+let frameWork = ["AngularJS", "Angular", "Spring", "Langchain"]
 
 
 export default function Skills() {
@@ -13,7 +13,7 @@ export default function Skills() {
         <Container className="min-vh-100 mobile-padding d-flex flex-column justify-content-md-center">
             <Row>
                 <Col>
-                 <h1 className="custom-underline"> SKILLS</h1>
+                 <h3 className="custom-underline"> SKILLS</h3>
                 </Col>
             </Row>
 
@@ -35,7 +35,7 @@ export default function Skills() {
             </Row>
 
             <Row>
-                <Col xs={3}>
+                <Col xs={6} md={3}>
                 <p>Programming Language</p>
                 <ul className="horizontal-list">
                    {programmingLanguage.map((lang) => (

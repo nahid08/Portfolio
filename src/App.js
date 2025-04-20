@@ -86,7 +86,7 @@ function App() {
         onHide={handleOffcanvasClose}
         responsive="md" // Only act as Offcanvas below md breakpoint
         placement="start" // Slide from left
-        className="bg-light" // Match background with static sidebar
+        className="canvas-menu-style" // Match background with static sidebar
         backdrop="static"
         scroll={true}
       >

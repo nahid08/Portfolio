@@ -73,6 +73,10 @@ body {
  background-color: lightblue;
 }
 
+.canvas-menu-style {
+  background-color: lightblue !important;
+}
+
 @media (max-width: 768px) {
   .mobile-padding {
     padding-top: 70px;

@@ -1,6 +1,7 @@
-import { Navbar, Container, Nav, Col, Row } from "react-bootstrap";
+import { Container, Col, Row } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookF, faGithub, faLinkedinIn, faGoogle } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import './AboutMyself.css';
 
 export default function AboutMyself() {
@@ -10,7 +11,7 @@ export default function AboutMyself() {
               <Row className="mb-5">
                 <Col xs={12}>
                   <h1>Nahid Hossain</h1>
-                  <p1>Dhaka, Bangladesh <span className="d-inline-block">·</span> <a href="drmc.nahid@gmail.com">drmc.nahid@gmail.com</a></p1>
+                  <p1>Dhaka, Bangladesh <span className="d-inline-block">·</span> <a href="drmc.nahid@gmail.com" className="mail-design">drmc.nahid@gmail.com</a></p1>
                 </Col>
               </Row>
               <Row>                
@@ -25,7 +26,6 @@ export default function AboutMyself() {
                 <a href="https://www.facebook.com/nahidhossain"><FontAwesomeIcon icon={faFacebookF} className="icon-style" /></a>
                 <a href="https://github.com/nahid08"><FontAwesomeIcon icon={faGithub} className="icon-style"/></a>
                 <a href="https://www.linkedin.com/in/nahid-hossain-325257177/"><FontAwesomeIcon icon={faLinkedinIn} className="icon-style"/></a>
-                <FontAwesomeIcon icon={faGoogle} className="icon-style" />
                 </Col>
               </Row>
             </Container>
