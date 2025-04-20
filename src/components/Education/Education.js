@@ -17,7 +17,7 @@ export default function Education() {
             <Card.Body className="d-flex">
                  <Image src={jahangirnagar}  fluid className="card-image-style"></Image>
                  <div className="container">
-                    <h2 className="m-0">Jahangirnagar University</h2>
+                    <h3 className="m-0">Jahangirnagar University</h3>
                     <p className="m-0">Bachelor of Science</p>
                     <p className="m-0">Computer Science and Engineering</p>
                     <p>GPA: 3.30</p>
@@ -33,7 +33,7 @@ export default function Education() {
             <Card.Body className="d-flex">
                  <Image src={drmc}  fluid className="card-image-style"></Image>
                  <div className="container">
-                    <h2 className="m-0">Dhaka Residential Model School & College</h2>
+                    <h3 className="m-0">Dhaka Residential Model School & College</h3>
                     <p className="m-0">Higher Secondary Certificate</p>
                     <p className="m-0">Computer Science and Engineering</p>
                     <p>GPA: 5.00</p>
@@ -49,7 +49,7 @@ export default function Education() {
             <Card.Body className="d-flex">
                  <Image src={drmc}  fluid className="card-image-style"></Image>
                  <div className="container">
-                    <h2 className="m-0">Dhaka Residential Model School & College</h2>
+                    <h3 className="m-0">Dhaka Residential Model School & College</h3>
                     <p className="m-0">Secondary School Certificate</p>
                     <p className="m-0">Computer Science and Engineering</p>
                     <p>GPA: 5.00</p>

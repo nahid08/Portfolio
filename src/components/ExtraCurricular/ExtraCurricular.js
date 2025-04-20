@@ -79,7 +79,7 @@ export default function ExtraCurricular() {
                     <h5 className="m-0">UHUNT ONLINE JUDGE</h5>
                     <p className="m-0">HANDLE: nahid_08</p>
                     <p className="m-0">PROBLEM SOLVED: 279</p>
-                    <a href="https://uhunt.onlinejudge.org/id/849678">https://uhunt.onlinejudge.org/id/849678</a>
+                    <a href="https://uhunt.onlinejudge.org/id/849678" className="text-break">https://uhunt.onlinejudge.org/id/849678</a>
                 </div>
             </Card.Body>
           </Card>
