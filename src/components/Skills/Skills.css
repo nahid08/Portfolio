@@ -7,3 +7,6 @@
     color: maroon;
 }
 
+.horizontal-list {
+    list-style-type: none;
+}

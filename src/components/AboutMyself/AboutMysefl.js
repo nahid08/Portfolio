@@ -15,9 +15,9 @@ export default function AboutMyself() {
               </Row>
               <Row>                
                 <Col>
-                <p1>
+                <p>
                 Nahid has over 4 years of experience in the software industry. During his university years, he was an active competitive programmer and represented his university in more than 20 programming contests. He has solved over 3000 algorithm and data structure problems, showcasing his strong problem-solving skills. Passionate about exploring new technologies, Nahid constantly seeks out new challenges. The value he brings to any organization lies in his well-rounded skill set, developed through both academic achievements and professional experience.
-                </p1>
+                </p>
                 </Col>
               </Row>
               <Row>

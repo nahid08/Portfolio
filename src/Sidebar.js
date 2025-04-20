@@ -35,6 +35,7 @@ const Sidebar = ({ isOpen, toggle }) => {
             <BoxArrowRight className="me-2" /> Logout
           </Nav.Link>
       </Nav.Item>
+      
     </Nav>
   );
 };

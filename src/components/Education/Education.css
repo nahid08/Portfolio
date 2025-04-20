@@ -1,5 +1,17 @@
-.custom-underline {
-    display: inline-block;
-    border-bottom: 3px solid maroon;  /* Adjust thickness and color */
-    padding-bottom: 10px;  /* Adjust the space between text and the underline */
+
+.card-image-style {
+    width: 70px;
+    height: 70px;
 }
+
+.card-style {
+    background-color: transparent !important;
+    transition: all 0.3s ease;
+    border: 2px solid maroon;
+}
+
+.card-style:hover {
+    background-color: #f8f9fa; /* Light background on hover */
+    transform: scale(1.03); /* Slight zoom */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  }

@@ -4,4 +4,11 @@
 
 .main-container {
   font-family: 'Poppins';
+  font-size: clamp(1rem, 1vw, 3rem) !important;
+}
+
+.custom-underline {
+  display: inline-block;
+  border-bottom: 3px solid maroon;  /* Adjust thickness and color */
+  padding-bottom: 10px;  /* Adjust the space between text and the underline */
 }

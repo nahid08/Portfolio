@@ -1,5 +1,3 @@
-.custom-underline {
-    display: inline-block;
-    border-bottom: 3px solid maroon;  /* Adjust thickness and color */
-    padding-bottom: 10px;  /* Adjust the space between text and the underline */
+.list-style {
+    list-style-type: none;
 }

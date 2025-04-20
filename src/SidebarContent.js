@@ -17,6 +17,13 @@ function SidebarContent() {
       <Nav.Link href="#skills" className="d-flex align-items-center justify-content-md-center">
         Skills
       </Nav.Link>
+      <Nav.Link href="#extracurricular" className="d-flex align-items-center justify-content-md-center">
+        ExtraCurricular
+      </Nav.Link>
+      <Nav.Link href="#achievements" className="d-flex align-items-center justify-content-md-center">
+        ACHIEVEMENTS
+      </Nav.Link>
+      
       {/* Add more links as needed */}
     </Nav>
   );

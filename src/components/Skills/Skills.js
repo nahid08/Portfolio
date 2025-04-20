@@ -3,10 +3,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPython, faJava, faJs, faAngular, faSourcetree, faHtml5 } from "@fortawesome/free-brands-svg-icons";
 import './Skills.css';
 
+let programmingLanguage = ["Java", "Javascript", "TypeScript", "C++", "HTML", "CSS", "Python"]
+let frameWork = ["AngularJS", "Angular", "Spring"]
+
+
 export default function Skills() {
 
     return (
-        <Container className="vh-100 d-flex flex-column justify-content-center">
+        <Container className="min-vh-100 d-flex flex-column justify-content-center">
             <Row>
                 <Col>
                  <h1 className="custom-underline"> SKILLS</h1>
@@ -14,13 +18,13 @@ export default function Skills() {
             </Row>
 
             <Row>
-                <Col>
+                <Col className="mb-4 mt-4">
                 Programming Languages & Tools
                 </Col>
             </Row>
 
             <Row>
-                <Col>
+                <Col className="mb-3">
                 <FontAwesomeIcon icon={faPython} className="tool-icon-style" title="Python"/>
                 <FontAwesomeIcon icon={faJava} className="tool-icon-style" title="Java"/>
                 <FontAwesomeIcon icon={faJs} className="tool-icon-style" title="Javascript"/>
@@ -31,29 +35,27 @@ export default function Skills() {
             </Row>
 
             <Row>
-                <Col>
+                <Col xs={3}>
                 <p>Programming Language</p>
                 <ul className="horizontal-list">
-                    <li>Java</li>
-                    <li>JavaScript</li>
-                    <li>TypeScript</li>
-                    <li>C++</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>TypeScript</li>
+                   {programmingLanguage.map((lang) => (
+                    <li>✔ {lang}</li>
+                   ))}
+                </ul>
+                </Col>
+
+                <Col>
+                <p>Frameworks</p>
+                <ul className="horizontal-list">
+                {frameWork.map((lang) => (
+                    <li>✔ {lang}</li>
+                   ))}
                 </ul>
                 </Col>
             </Row>
 
             <Row>
-                <Col>
-                <p>Frameworks</p>
-                <ul className="horizontal-list">
-                    <li>AngularJS</li>
-                    <li>Angular</li>
-                    <li>Spring</li>
-                </ul>
-                </Col>
+               
             </Row>
         </Container>
     )
