@@ -4,13 +4,21 @@ import AboutMyself from './components/AboutMyself/AboutMysefl';
 import Experience from './components/Experience/Experience';
 import Education from './components/Education/Education';
 import Skills from './components/Skills/Skills';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Navbar, Button, Nav } from 'react-bootstrap';
 import ExtraCurricular from './components/ExtraCurricular/ExtraCurricular';
 import Achievements from './components/Achievements/Achievements';
+import { List } from "react-bootstrap-icons"; // Hamburger icon
 
-function MainContent() {
+function MainContent({onGreet}) {
   return (
      <Container  className="main-container">
+      <Navbar className="d-md-none bg-light" fixed="top">
+                        <Container className="d-flex justify-content-start">
+                          <Button variant="primary" onClick={onGreet}>
+                            <List size={24} />
+                          </Button>
+                        </Container>
+      </Navbar>
       <Row>
         <Col>
         <section id="about"><AboutMyself/></section>

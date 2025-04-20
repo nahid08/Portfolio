@@ -4,7 +4,7 @@ import jahangirnagar from '../../assets/images/jahangirnagar_logo1.png';
 import drmc from '../../assets/images/drmc.png';
 export default function Education() {
   return (
-    <Container className="min-vh-100 d-flex flex-column justify-content-center">
+    <Container className="min-vh-100 mobile-padding d-flex flex-column justify-content-md-center">
       <Row>
         <Col>
           <h1 className="custom-underline">Education</h1>

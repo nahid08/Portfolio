@@ -17,7 +17,7 @@ export default function Experience() {
 
 
     return(
-        <Container className="min-vh-100 d-flex flex-column justify-content-center">
+        <Container className="min-vh-100 mobile-padding d-flex flex-column justify-content-md-center">
             <Row>
                 <Col>
                 <h1 className="mb-5 custom-underline">Experience</h1>

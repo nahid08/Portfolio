@@ -6,7 +6,7 @@ import images from '../../assets/images/images.png';
 
 export default function ExtraCurricular() {
   return (
-    <Container className="min-vh-100 d-flex flex-column justify-content-center">
+    <Container className="min-vh-100 mobile-padding d-flex flex-column justify-content-md-center">
       <Row>
         <Col>
           <h3 className="custom-underline">AWARDS</h3>

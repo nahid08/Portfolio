@@ -2,28 +2,21 @@ import React from 'react';
 import Nav from 'react-bootstrap/Nav';
 import { HouseDoorFill, BarChartFill, PeopleFill, GearFill } from 'react-bootstrap-icons'; // Example icons
 
-function SidebarContent() {
+function SidebarContent({closeSidebar}) {
+
+  let sideMenues = [{id: "about", name: "ABOUT"}, {id: "experience", name: "EXPERIENCE"}, 
+    {id: "education", name: "EDUCATION"}, {id: "skills", name: "SKILLS"}, {id: "programming", name: "PROGRAMMING"}, 
+    {id: "achievements", name: "ACHIEVEMENTS"}];
+
+
   return (
     <Nav className="flex-column p-3"> {/* Use flex-column for vertical nav */}
-      <Nav.Link href="#about" className="d-flex align-items-center justify-content-md-center mb-2">
-       About
-      </Nav.Link>
-      <Nav.Link href="#experience" className="d-flex align-items-center justify-content-md-center mb-2">
-        Experience
-      </Nav.Link>
-      <Nav.Link href="#education" className="d-flex align-items-center justify-content-md-center mb-2">
-        Education
-      </Nav.Link>
-      <Nav.Link href="#skills" className="d-flex align-items-center justify-content-md-center">
-        Skills
-      </Nav.Link>
-      <Nav.Link href="#extracurricular" className="d-flex align-items-center justify-content-md-center">
-        ExtraCurricular
-      </Nav.Link>
-      <Nav.Link href="#achievements" className="d-flex align-items-center justify-content-md-center">
-        ACHIEVEMENTS
-      </Nav.Link>
       
+      {sideMenues.map((menu) => (
+        <Nav.Link href={`#${menu.id}`} onClick={closeSidebar} className="d-flex align-items-center justify-content-md-center mb-2">
+            {menu.name}
+      </Nav.Link>
+      ))}
       {/* Add more links as needed */}
     </Nav>
   );

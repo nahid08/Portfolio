@@ -71,5 +71,10 @@ body {
 
 .image-style {
  background-color: lightblue;
+}
 
+@media (max-width: 768px) {
+  .mobile-padding {
+    padding-top: 70px;
+  }
 }

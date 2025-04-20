@@ -10,7 +10,7 @@ let frameWork = ["AngularJS", "Angular", "Spring"]
 export default function Skills() {
 
     return (
-        <Container className="min-vh-100 d-flex flex-column justify-content-center">
+        <Container className="min-vh-100 mobile-padding d-flex flex-column justify-content-md-center">
             <Row>
                 <Col>
                  <h1 className="custom-underline"> SKILLS</h1>
