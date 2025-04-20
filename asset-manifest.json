@@ -1,18 +1,21 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.27720469.css",
-    "main.js": "/Portfolio/static/js/main.02a408e6.js",
+    "main.css": "/Portfolio/static/css/main.b20fa02c.css",
+    "main.js": "/Portfolio/static/js/main.e71407fe.js",
     "static/js/453.1407b060.chunk.js": "/Portfolio/static/js/453.1407b060.chunk.js",
     "static/media/jahangirnagar_logo1.png": "/Portfolio/static/media/jahangirnagar_logo1.03324a7de1eeddaa6261.png",
     "static/media/drmc.png": "/Portfolio/static/media/drmc.4632f568dc2ae8e2b176.png",
+    "static/media/ACM-ICPC-2019.pdf": "/Portfolio/static/media/ACM-ICPC-2019.d67439d5b1cf871ad924.pdf",
+    "static/media/ACM-ICPC-2021.pdf": "/Portfolio/static/media/ACM-ICPC-2021.400c51fe67126b1933ba.pdf",
+    "static/media/ASIA-WEST.pdf": "/Portfolio/static/media/ASIA-WEST.d13db01d0f311c150792.pdf",
     "static/media/myself.jpg": "/Portfolio/static/media/myself.eb0e6bd1dc46ee1dac10.jpg",
     "index.html": "/Portfolio/index.html",
-    "main.27720469.css.map": "/Portfolio/static/css/main.27720469.css.map",
-    "main.02a408e6.js.map": "/Portfolio/static/js/main.02a408e6.js.map",
+    "main.b20fa02c.css.map": "/Portfolio/static/css/main.b20fa02c.css.map",
+    "main.e71407fe.js.map": "/Portfolio/static/js/main.e71407fe.js.map",
     "453.1407b060.chunk.js.map": "/Portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.27720469.css",
-    "static/js/main.02a408e6.js"
+    "static/css/main.b20fa02c.css",
+    "static/js/main.e71407fe.js"
   ]
 }
