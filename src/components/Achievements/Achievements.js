@@ -20,12 +20,13 @@ export default function Achievements() {
             <ul className="achievements-list-style">
                 <li><FontAwesomeIcon icon={faTrophy} className="me-2"/>Ranked 8th among 150 teams in National Collegiate Programming Contest 2020, Dhaka, Bangladesh. 
                 </li>
-                <li><FontAwesomeIcon icon={faTrophy} className="me-2"/>Ranked 19th among 188 teams in ICPC 2019, Dhaka, Bangladesh.
+                <li><FontAwesomeIcon icon={faTrophy} className="me-2"/>Ranked 19th among 188 teams in ACM ICPC 2019, Dhaka, Bangladesh.
                 <a href={icpc2019} target="_blank" rel="noopener noreferrer" className="ps-2">Certificate</a></li>
-                <li><FontAwesomeIcon icon={faTrophy} className="me-2"/>Ranked 19th among 110 teams in ICPC 2019, Dhaka, Bangladesh.
+                <li><FontAwesomeIcon icon={faTrophy} className="me-2"/>Ranked 19th among 110 teams in ACM ICPC 2020, Dhaka, Bangladesh.
                 <a href={icpc2021} target="_blank" rel="noopener noreferrer" className="ps-2">Certificate</a></li>
                 <li><FontAwesomeIcon icon={faTrophy} className="me-2"/>Qualified in Asia-west regional ICPC final contest 2019, India.
                 <a href={asiaWest} target="_blank" rel="noopener noreferrer" className="ps-2">Certificate</a></li>
+                <li><FontAwesomeIcon icon={faTrophy} className="me-2"/>Ranked 38th among 296 teams in ACM ICPC 2018, Dhaka, Bangladesh.</li>
                 <li><FontAwesomeIcon icon={faTrophy} className="me-2"/>Ranked 1st in home country Bangladesh and 36th among 8000 contestants in Codeforces Round 544</li>
                 <li><FontAwesomeIcon icon={faTrophy} className="me-2"/>Ranked 1st in home country Bangladesh and 7th among 600 users in Codechef March Cook-Off 2019 Division 2</li>
             </ul>
